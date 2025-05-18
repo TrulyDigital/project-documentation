@@ -1,0 +1,27 @@
+---
+import BurguerSvg from "./BurguerSvg.astro";
+---
+
+<div class="sideNavigationLayout__content">
+    <div 
+        class="sideNavigationItems__content"
+        id="idSideNavigationItemsContent"
+    >
+        <div>
+            <a href="/">Projects</a>
+        </div>
+        <ul>
+            <li class="sideNavigation__item">
+                <a href="/DATA_STREET">💻 Data Street</a>
+            </li>
+            <li class="sideNavigation__item">
+                <a href="/DOCKER_STACK">💻 Docker Stack</a>
+            </li>
+        </ul>
+    </div>
+    <div class="sideNavigation__burguer">
+        <button id="idButtomBurguer">
+            <BurguerSvg />
+        </button>
+    </div>
+</div>

@@ -1,0 +1,208 @@
+/*
+ *
+ * Main template styles
+ *
+ */
+.mainLayout_content{
+    @apply
+    /* sm */
+    flex
+    flex-row
+}
+
+/*
+ *
+ * Main article styles
+ *
+ */
+.articleLayout_content{
+    @apply
+    /* sm */
+    w-full
+    flex
+    flex-row
+    justify-center
+}
+
+.article_content{
+    @apply
+    /* sm */
+    w-full
+    pl-1
+    pr-4
+    max-w-screen-md
+    mx-auto
+    /* lg */
+    lg:pl-0
+    lg:pr-0
+    lg:w-9/12
+}
+
+/*
+ *
+ * Heading styles
+ *
+ */
+.article_content h1,
+.article_content h2,
+.article_content h3 {
+    @apply
+    text-zinc-700
+}
+
+.article_content h1{
+    @apply
+    text-4xl
+    font-bold
+    border-b
+    pb-3
+    border-b-zinc-300
+}
+
+.article_content h2{
+    @apply
+    text-3xl
+    font-semibold
+    mt-14
+    border-b
+    pb-3
+    border-b-zinc-300
+    mb-4
+}
+
+.article_content h3{
+    @apply
+    text-2xl
+    font-medium
+}
+
+/*
+ *
+ * Hero image styles
+ *
+ */
+.article_content p:has(> img):has(+ h1){
+    @apply
+    /* sm */
+    pt-1
+    pb-8
+}
+
+/*
+ *
+ * Article content and text
+ *
+ */
+.article_content p:not(:has(img)),
+.article_content p:has(> strong),
+.article_content p:has(> code) {
+    @apply
+    mt-5
+}
+
+/*
+ *
+ * Article links - menu
+ *
+ */
+.article_content p:has(> a):not(:has(+ h1)){
+    @apply
+    mt-5
+    flex
+    flex-col
+}
+
+.article_content > p:not(:has(+ h1)) > a{
+    @apply
+    mt-2
+    text-sky-700
+    underline
+    underline-offset-4
+}
+
+/*
+ *
+ * Article links - breadcrumbs
+ *
+ */
+.article_content p:has(> a):has(+ h1){
+    @apply
+    mb-7
+    flex
+    flex-row
+    text-sm
+    text-rose-600
+}
+
+.article_content p:has(> a):has(+ h1) > a{
+    @apply
+    underline
+    underline-offset-4
+}
+
+/*
+ *
+ * Article images
+ *
+ */
+.article_content p:has(img):has(+ h2),
+.article_content p:has(img):has(+ h3){
+    @apply
+    /* sm */
+    flex
+    flex-row
+    justify-center
+    mt-10
+}
+
+.article_images {
+    @apply
+    /* sm */
+    mt-10
+    mb-10
+    flex
+    flex-row
+    justify-center
+}
+
+/*
+ *
+ * Article code element
+ *
+ */
+.article_content p:has(> code) > code {
+    @apply
+    bg-slate-200
+    p-1
+    rounded-sm
+}
+
+/*
+ *
+ * Article code element
+ *
+ */
+.article_content strong{
+    @apply
+    text-pink-600
+}
+
+/*
+ *
+ * Article pre element
+ *
+ */
+.article_content pre{
+    @apply
+    /* sm */
+    block
+    whitespace-pre
+    mt-5
+    p-4
+    rounded-md
+    text-xs
+    w-full
+    overflow-x-auto
+    /* md */
+    md:text-base
+}

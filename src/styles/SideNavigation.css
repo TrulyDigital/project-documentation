@@ -1,0 +1,58 @@
+.sideNavigationLayout__content {
+    @apply
+    /* sm */
+    w-full
+    h-full
+    flex
+    flex-row
+}
+
+.sideNavigationItems__content > div {
+    @apply
+    flex
+    flex-row
+    w-full
+    border-b
+}
+
+.sideNavigationItems__content > div > a {
+    @apply
+    block
+    w-full
+}
+
+.sideNavigationItems__content-open{
+    @apply
+    w-40
+}
+
+.sideNavigationItems__content-close{
+    @apply
+    w-0
+    hidden
+}
+
+.sideNavigation__item{
+    @apply
+    /* sm */
+    underline
+    underline-offset-4
+    mt-2
+    pl-2
+    text-sky-600
+}
+
+.sideNavigation__burguer{
+    @apply
+    /* sm */
+    w-7
+    border-r
+}
+
+.sideNavigation__burguer > button {
+    @apply
+    w-full
+    flex
+    justify-center
+    border-b
+}
