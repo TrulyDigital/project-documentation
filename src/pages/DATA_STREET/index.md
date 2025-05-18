@@ -6,11 +6,11 @@ pubDate: May 16th, 2025
 
 <p>
     <img
-        src="/DATA_STREET/hero-medium.webp"
+        src="/project-documentation/DATA_STREET/hero-medium.webp"
         srcset="
-            /DATA_STREET/hero-small.webp 400w,
-            /DATA_STREET/hero-medium.webp 800w,
-            /DATA_STREET/hero-large.webp 1200w
+            /project-documentation/DATA_STREET/hero-small.webp 400w,
+            /project-documentation/DATA_STREET/hero-medium.webp 800w,
+            /project-documentation/DATA_STREET/hero-large.webp 1200w
         "
         sizes="(max-width: 600px) 100vw"
         alt="Descripción de mi foto"
@@ -25,5 +25,5 @@ The software architecture project has different blocks of components, and each o
 
 Each component within the project's software architecture has its own dedicated documentation and each one is:
 
-[1️⃣ Project Software Architecture](./DATA_STREET/general)
-[2️⃣ SFTP Server Component](./DATA_STREET/server-sftp)
+[1️⃣ Project Software Architecture](./project-documentation/DATA_STREET/general)
+[2️⃣ SFTP Server Component](./project-documentation/DATA_STREET/server-sftp)

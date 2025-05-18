@@ -6,18 +6,18 @@ pubDate: May 16th, 2025
 
 <p>
     <img
-        src="/DATA_STREET/hero-medium.webp"
+        src="/project-documentation/DATA_STREET/hero-medium.webp"
         srcset="
-            /DATA_STREET/hero-small.webp 400w,
-            /DATA_STREET/hero-medium.webp 800w,
-            /DATA_STREET/hero-large.webp 1200w
+            /project-documentation/DATA_STREET/hero-small.webp 400w,
+            /project-documentation/DATA_STREET/hero-medium.webp 800w,
+            /project-documentation/DATA_STREET/hero-large.webp 1200w
         "
         sizes="(max-width: 600px) 100vw"
         alt="Descripción de mi foto"
     />
 </p>
 
-[👉 Data Street](/DATA_STREET) &nbsp;&nbsp;&nbsp;&nbsp; [👉 SFTP Server](/DATA_STREET/server-sftp)
+[👉 Data Street](/project-documentation/DATA_STREET) &nbsp;&nbsp;&nbsp;&nbsp; [👉 SFTP Server](/project-documentation/DATA_STREET/server-sftp)
 
 # SFTP Server
 
@@ -37,7 +37,7 @@ For now, we're only interested in the SFTP server and the following image shows 
 
 <p class="article_images">
     <img
-        src="/DATA_STREET/server_sftp-introduction.webp"
+        src="/project-documentation/DATA_STREET/server_sftp-introduction.webp"
         alt="Descripción de mi foto"
     />
 </p>
@@ -56,7 +56,7 @@ As I mentioned before, we have deployed a Docker container running an SFTP serve
 
 <p class="article_images">
     <img
-        src="/DATA_STREET/server_sftp-docker.webp"
+        src="/project-documentation/DATA_STREET/server_sftp-docker.webp"
         alt="Descripción de mi foto"
     />
 </p>
