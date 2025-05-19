@@ -7,7 +7,7 @@
     text-white
     pl-6
     pr-6
-    pt-2
+    pt-4
     pb-2
 }
 
@@ -37,6 +37,11 @@
     mr-7
     w-6
     h-6
+}
+
+.desktopMainBarMenu__mobileSideSubMenuBar-disabled{
+    @apply
+    opacity-20
 }
 
 .desktopMainBarMenu__logo{

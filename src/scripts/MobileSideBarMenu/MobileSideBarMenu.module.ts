@@ -1,8 +1,9 @@
-import { BurguerPublisher } from "./services/Burguer.publisher";
-import { MobileSideBarMenuStateTopic } from "./services/MobileSideBarMenuState.topic";
-import { MobileSideBarMenuSubscriber } from "./services/MobileSideBarMenu.subscriber";
-import { ClosePublisher } from "./services/Close.publisher";
-import { BodySubscriber } from "./services/Body.subscriber";
+import { BurguerPublisher } from "@scripts/MobileSideBarMenu/services/Burguer.publisher";
+import { MobileSideBarMenuStateTopic } from "@scripts/MobileSideBarMenu/services/MobileSideBarMenuState.topic";
+import { MobileSideBarMenuSubscriber } from "@scripts/MobileSideBarMenu/services/MobileSideBarMenu.subscriber";
+import { ClosePublisher } from "@scripts/MobileSideBarMenu/services/Close.publisher";
+import { BodySubscriber } from "@scripts/MobileSideBarMenu/services/Body.subscriber";
+import { ArrowRightSubscriber } from "@scripts/MobileSideBarMenu/services/ArrowRight.subscriber";
 
 export class MobileSideBarMenuModule{
 
@@ -19,6 +20,9 @@ export class MobileSideBarMenuModule{
             navStateTopic,
         );
         new BodySubscriber(
+            navStateTopic,
+        );
+        new ArrowRightSubscriber(
             navStateTopic,
         );
     }
