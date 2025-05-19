@@ -1,30 +1,99 @@
 /*
  *
  * Main template styles
+ * Grid
  *
  */
-.mainLayout_content{
+.mainLayout__content{
     @apply
-    /* sm */
-    flex
-    flex-row
+    grid
+    custom-grid-layout
+    bg-neutral-900
 }
 
-/*
- *
- * Main article styles
- *
- */
-.articleLayout_content{
+.mainLayout__content-opacity{
+    @apply
+    inset-0
+    z-20
+    bg-black
+    opacity-75
+}
+
+.desktopMainBarMenuLayout__content{
+    @apply
+    custom-grid-header
+    h-fit
+}
+
+.desktopSideBarMenuLayout__content{
+    @apply
+    custom-grid-sidebar
+    bg-blue-200
+}
+
+.mobileSideBarMenuLayout__content{
+    @apply
+    h-full
+    fixed
+    z-10
+    top-0
+    right-0
+    bg-neutral-800
+    overflow-x-hidden
+    pt-2
+    pb-2
+    transition-all
+    duration-300
+    ease-in-out
+    flex
+    flex-col
+    text-neutral-200
+}
+
+.mobileSideBarMenuLayout__content-open{
+    @apply
+    w-72
+    pl-2
+    pr-2
+}
+
+.mobileSideBarMenuLayout__content-close{
+    @apply
+    w-0
+    pl-0
+    pr-0
+}
+
+.articleLayout__content{
     @apply
     /* sm */
+    custom-grid-main
     w-full
     flex
     flex-row
     justify-center
+    bg-violet-300
 }
 
-.article_content{
+.asideLayout__content{
+    @apply
+    custom-grid-aside
+    bg-green-200
+}
+
+.footerLayout__content{
+    @apply
+    custom-grid-footer
+    bg-red-200
+}
+
+/*
+ *
+ * Article content styles
+ *
+ */
+ 
+.article__content{
     @apply
     /* sm */
     w-full
@@ -43,14 +112,14 @@
  * Heading styles
  *
  */
-.article_content h1,
-.article_content h2,
-.article_content h3 {
+.article__content h1,
+.article__content h2,
+.article__content h3 {
     @apply
     text-zinc-700
 }
 
-.article_content h1{
+.article__content h1{
     @apply
     text-4xl
     font-bold
@@ -59,7 +128,7 @@
     border-b-zinc-300
 }
 
-.article_content h2{
+.article__content h2{
     @apply
     text-3xl
     font-semibold
@@ -70,7 +139,7 @@
     mb-4
 }
 
-.article_content h3{
+.article__content h3{
     @apply
     text-2xl
     font-medium
@@ -81,7 +150,7 @@
  * Hero image styles
  *
  */
-.article_content p:has(> img):has(+ h1){
+.article__content p:has(> img):has(+ h1){
     @apply
     /* sm */
     pt-1
@@ -93,9 +162,9 @@
  * Article content and text
  *
  */
-.article_content p:not(:has(img)),
-.article_content p:has(> strong),
-.article_content p:has(> code) {
+.article__content p:not(:has(img)),
+.article__content p:has(> strong),
+.article__content p:has(> code) {
     @apply
     mt-5
 }
@@ -105,14 +174,14 @@
  * Article links - menu
  *
  */
-.article_content p:has(> a):not(:has(+ h1)){
+.article__content p:has(> a):not(:has(+ h1)){
     @apply
     mt-5
     flex
     flex-col
 }
 
-.article_content > p:not(:has(+ h1)) > a{
+.article__content > p:not(:has(+ h1)) > a{
     @apply
     mt-2
     text-sky-700
@@ -125,7 +194,7 @@
  * Article links - breadcrumbs
  *
  */
-.article_content p:has(> a):has(+ h1){
+.article__content p:has(> a):has(+ h1){
     @apply
     mb-7
     flex
@@ -134,7 +203,7 @@
     text-rose-600
 }
 
-.article_content p:has(> a):has(+ h1) > a{
+.article__content p:has(> a):has(+ h1) > a{
     @apply
     underline
     underline-offset-4
@@ -145,8 +214,8 @@
  * Article images
  *
  */
-.article_content p:has(img):has(+ h2),
-.article_content p:has(img):has(+ h3){
+.article__content p:has(img):has(+ h2),
+.article__content p:has(img):has(+ h3){
     @apply
     /* sm */
     flex
@@ -170,7 +239,7 @@
  * Article code element
  *
  */
-.article_content p:has(> code) > code {
+.article__content p:has(> code) > code {
     @apply
     bg-slate-200
     p-1
@@ -182,7 +251,7 @@
  * Article code element
  *
  */
-.article_content strong{
+.article__content strong{
     @apply
     text-pink-600
 }
@@ -192,7 +261,7 @@
  * Article pre element
  *
  */
-.article_content pre{
+.article__content pre{
     @apply
     /* sm */
     block

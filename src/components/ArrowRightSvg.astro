@@ -1,0 +1,12 @@
+---
+// Puedes recibir props si quieres que sea reutilizable
+const { svgPath = "/project-documentation/assets/arrow-right.svg" } = Astro.props;
+---
+
+<div class="inline-block">
+    <img
+        src={svgPath}
+        alt="Arrow Right menu"
+        class="arrowRight"
+    />
+</div>

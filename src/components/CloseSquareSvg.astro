@@ -1,0 +1,12 @@
+---
+// Puedes recibir props si quieres que sea reutilizable
+const { svgPath = "/project-documentation/assets/close-square.svg" } = Astro.props;
+---
+
+<div class="inline-block">
+    <img
+        src={svgPath}
+        alt="Close Side Bar Menu"
+        class="closeSquare"
+    />
+</div>

@@ -1,6 +1,10 @@
 ---
-import SideNavigation from "../components/SideNavigation.astro";
-import "/src/styles/tailwind.css";
+import DesktopSideBarMenu from "@components/DesktopSideBarMenu.astro";
+import DesktopMainBarMenu from "@components/DesktopMainBarMenu.astro";
+import MobileSideBarMenu from "@components/MobileSideBarMenu.astro";
+import Aside from "@components/AsideLayout.astro";
+import Footer from "@components/Footer.astro";
+import '/src/styles/global.css';
 ---
 
 <!doctype html>
@@ -12,15 +16,43 @@ import "/src/styles/tailwind.css";
         <meta name="generator" content={Astro.generator} />
         <title>Project Documentation</title>
     </head>
-    <body class="mainLayout_content">
-        <nav>
-            <SideNavigation />
+    <body 
+        class="mainLayout__content"
+        id="idBody"
+    >
+
+        <nav class="desktopMainBarMenuLayout__content">
+            <DesktopMainBarMenu />
         </nav>
-        <article class="articleLayout_content">
-            <div class="article_content">
+
+        <nav class="desktopSideBarMenuLayout__content">
+            <DesktopSideBarMenu />
+        </nav>
+
+        <nav 
+            class="
+                mobileSideBarMenuLayout__content
+                mobileSideBarMenuLayout__content-close
+            "
+            id="idMobileSideBarMenu"
+        >
+            <MobileSideBarMenu />
+        </nav>
+
+        <article class="articleLayout__content">
+            <section class="article__content">
                 <slot />
-            </div>
+            </section>
         </article>
+
+        <aside class="asideLayout__content">
+            <Aside />
+        </aside>
+
+        <footer class="footerLayout__content">
+            <Footer />
+        </footer>
+        
     </body>
 </html>
 
@@ -34,6 +66,6 @@ import "/src/styles/tailwind.css";
 </style>
 
 <script>
-    import { application } from "../scripts/main";
+    import { application } from "@scripts/main";
     application();
 </script>

@@ -1,0 +1,114 @@
+.desktopMainBarMenu__content{
+    @apply
+    flex
+    flex-row
+    justify-between
+    items-center
+    text-white
+    pl-6
+    pr-6
+    pt-2
+    pb-2
+}
+
+.desktopMainBarMenu__component{
+    @apply
+    flex
+    flex-row
+    justify-center
+    items-center
+}
+
+.desktopMainBarMenu__mobileSideSubMenuBar{
+    @apply
+    flex
+    flex-row
+    justify-center
+    items-center
+    lg:hidden
+}
+
+.desktopMainBarMenu__mobileSideSubMenuBar > button{
+    @apply
+    flex
+    flex-row
+    justify-center
+    items-center
+    mr-7
+    w-6
+    h-6
+}
+
+.desktopMainBarMenu__logo{
+    @apply
+    hidden
+    md:flex
+    md:flex-row
+    md:justify-center
+    md:items-center
+    md:bg-violet-700
+    md:pt-1
+    md:pb-1
+    md:pr-2
+    pl-2
+    md:rounded-sm
+    md:hover:bg-violet-600
+}
+
+.desktopMainBarMenu__logo > strong{
+    @apply
+    flex
+    flex-row
+    justify-center
+    items-center
+    font-normal
+    text-white
+}
+
+.desktopMainBarMenu__projects{
+    @apply
+    ml-7
+    hidden
+    md:flex
+}
+
+.desktopMainBarMenu__projects > a{
+    @apply
+    hover:text-violet-400
+    transition
+    duration-200
+    ease-in-out
+}
+
+.desktopMainBarMenu__items{
+    @apply
+    hidden
+    ml-7
+    md:flex
+    md:flex-row
+}
+
+.desktopMainBarMenu__items > li{
+    @apply
+    mr-7
+    hover:text-violet-400
+    transition
+    duration-200
+    ease-in-out
+}
+
+.desktopMainBarMenu__socialAndMobileSideBarMenu{
+    @apply
+    bg-white
+    rounded-sm
+    flex
+    items-center
+    justify-center
+}
+
+.desktopMainBarMenu__socialAndMobileSideBarMenu > button{
+    @apply
+    flex
+    items-center
+    justify-center
+}

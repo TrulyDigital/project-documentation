@@ -1,4 +1,4 @@
-.sideNavigationLayout__content {
+.desktopSideBarMenu__content {
     @apply
     /* sm */
     w-full
@@ -7,7 +7,7 @@
     flex-row
 }
 
-.sideNavigationItems__content > div {
+.desktopSideBarMenuItems__content > div {
     @apply
     flex
     flex-row
@@ -15,24 +15,24 @@
     border-b
 }
 
-.sideNavigationItems__content > div > a {
+.desktopSideBarMenuItems__content > div > a {
     @apply
     block
     w-full
 }
 
-.sideNavigationItems__content-open{
+.desktopSideBarMenuItems__content-open{
     @apply
     w-40
 }
 
-.sideNavigationItems__content-close{
+.desktopSideBarMenuItems__content-close{
     @apply
     w-0
     hidden
 }
 
-.sideNavigation__item{
+.desktopSideBarMenu__item{
     @apply
     /* sm */
     underline
@@ -42,14 +42,14 @@
     text-sky-600
 }
 
-.sideNavigation__burguer{
+.desktopSideBarMenu__burguer{
     @apply
     /* sm */
     w-7
     border-r
 }
 
-.sideNavigation__burguer > button {
+.desktopSideBarMenu__burguer > button {
     @apply
     w-full
     flex

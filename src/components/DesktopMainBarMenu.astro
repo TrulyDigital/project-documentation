@@ -1,0 +1,43 @@
+---
+import BurguerSvg from "@components/BurguerSvg.astro";
+import ArrowRightSvg from "@components/ArrowRightSvg.astro";
+---
+
+<section class="desktopMainBarMenu__content">
+    <div class="desktopMainBarMenu__component">
+        <div class="desktopMainBarMenu__mobileSideSubMenuBar">
+            <button id="">
+                <ArrowRightSvg />
+            </button>
+        </div>
+        <div class="desktopMainBarMenu__logo">
+            <strong>
+                <a href="/project-documentation/">
+                    TrulyDigital
+                </a>
+            </strong>
+        </div>
+        <div class="desktopMainBarMenu__projects">
+            <a href="/project-documentation/">
+                All Projects
+            </a>
+        </div>
+        <ul class="desktopMainBarMenu__items">
+            <li>
+                <a href="/project-documentation/DATA_STREET">
+                    Data Street
+                </a>
+            </li>
+            <li>
+                <a href="/project-documentation/DOCKER_STACK">
+                    Docker Stack
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="desktopMainBarMenu__socialAndMobileSideBarMenu">
+        <button id="idBurguerButtonMainBarMenu">
+            <BurguerSvg />
+        </button>
+    </div>
+</section>

@@ -1,0 +1,44 @@
+.mobileSideBarMenu__close{
+    @apply
+    flex
+    flex-row
+    items-center
+    pt-1
+}
+
+.mobileSideBarMenu__close > button {
+    @apply
+    flex
+    flex-row
+    items-center
+    justify-center
+    w-6
+    h-6
+}
+
+.mobileSideBarMenu__items{
+    @apply
+    flex
+    flex-col
+    gap-4
+    mt-12
+}
+
+.mobileSideBarMenu__items > li {
+    @apply
+    flex
+    w-full
+}
+
+.mobileSideBarMenu__items > li > a{
+    @apply
+    bg-neutral-700
+    w-full
+    pt-1
+    pb-1
+    pl-2
+    rounded-md
+    hover:text-violet-400
+    transition
+    duration-200
+}

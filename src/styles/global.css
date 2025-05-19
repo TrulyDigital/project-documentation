@@ -1,0 +1,46 @@
+/* src/styles/tailwind.css */
+
+/* sm 640px */
+/* md 768px */
+/* lg 1024px */
+/* xl 1280px */
+/* 2xl 1536px */
+
+@import url('./Layout.css');
+@import url('./Burguer.css');
+@import url('./DesktopMainBarMenu.css');
+@import url('./DesktopSideBarMenu.css');
+@import url('./MobileSideBarMenu.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .custom-grid-layout {
+        grid-template-areas:
+            "header header header header"
+            "sidebar main main aside"
+            "footer footer footer footer";
+    }
+
+    .custom-grid-header {
+        grid-area: header;
+    }
+
+    .custom-grid-sidebar {
+        grid-area: sidebar;
+    }
+
+    .custom-grid-main {
+        grid-area: main;
+    }
+
+    .custom-grid-aside {
+        grid-area: aside;
+    }
+
+    .custom-grid-footer {
+        grid-area: footer;
+    }
+}
