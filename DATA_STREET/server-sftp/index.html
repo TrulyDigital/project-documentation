@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en" data-astro-cid-rftgkmjt> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><meta name="generator" content="Astro v5.7.13"><link rel="icon" type="image/svg+xml" href="/project-documentation/favicon.svg"><title>Project Documentation</title><link rel="stylesheet" href="/project-documentation/builds/general.FyX_r0m9.css"></head> <body class="mainLayout__content" id="idBody" data-astro-cid-rftgkmjt> <!-- Mobile Menus --> <nav class="
+<!DOCTYPE html><html lang="en" data-astro-cid-rftgkmjt> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><meta name="generator" content="Astro v5.7.13"><link rel="icon" type="image/svg+xml" href="/project-documentation/favicon.svg"><title>Project Documentation</title><link rel="stylesheet" href="/project-documentation/builds/general.q85LIRrh.css"></head> <body class="mainLayout__content" id="idBody" data-astro-cid-rftgkmjt> <!-- Mobile Menus --> <nav class="
                 mobileSideBarSubMenuLayout__content
                 mobileSideBarSubMenuLayout__content-close
             " id="idMobileSideBarSubMenu" data-astro-cid-rftgkmjt> <div class="sideBarSubMenu__content"> <div class="sideBarSubMenu__close"> <button id="idCloseButtonSideBarSubMenu"> <div class="inline-block"> <img src="/project-documentation/assets/close-square.svg" alt="Close Side Bar Menu" class="closeSquare"> </div> </button> </div> <ul class="sideBarSubMenu__items"> <li> <a href="/project-documentation/">
@@ -49,7 +49,7 @@ Docker Stack
 the CSV file will be processed by the Kafka container using the kafka Connect service, and each record (line) will be written to a custom topic, this will be covered in the specific kafka documentation.</p>
 <p>For now, we’re only interested in the SFTP server and the following image shows the software architecture and the components we need for its implementation.</p>
 <p class="article_images">
-    <img src="/project-documentation/DATA_STREET/server_sftp-introduction.webp" alt="Descripción de mi foto">
+    <img src="/project-documentation/DATA_STREET/server_sftp-introduction.png" alt="Descripción de mi foto">
 </p>
 <p><strong>An Ubuntu Server</strong> wheter bare-metal or a cloud-based virtual private server (VPS) and hosts the entire application and its services or componentes as Docker containers. In this case, it runs a Docker container that implements an SFTP server on linux.</p>
 <p><strong>A Docker container</strong> is a lightweight service that can run any type of software application. It must be deployed on a <code>Ubuntu Server</code> host (whether bare-metal or a cloud-based VPS).</p>
