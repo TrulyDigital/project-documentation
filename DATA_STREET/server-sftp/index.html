@@ -49,7 +49,7 @@ Docker Stack
 the CSV file will be processed by the Kafka container using the kafka Connect service, and each record (line) will be written to a custom topic, this will be covered in the specific kafka documentation.</p>
 <p>For now, we’re only interested in the SFTP server and the following image shows the software architecture and the components we need for its implementation.</p>
 <p class="article_images">
-    <img src="/project-documentation/DATA_STREET/server_sftp-introduction.png" alt="Descripción de mi foto">
+    <img src="/project-documentation/DATA_STREET/server_sftp-introduction.svg" alt="Descripción de mi foto">
 </p>
 <p><strong>An Ubuntu Server</strong> wheter bare-metal or a cloud-based virtual private server (VPS) and hosts the entire application and its services or componentes as Docker containers. In this case, it runs a Docker container that implements an SFTP server on linux.</p>
 <p><strong>A Docker container</strong> is a lightweight service that can run any type of software application. It must be deployed on a <code>Ubuntu Server</code> host (whether bare-metal or a cloud-based VPS).</p>
@@ -58,7 +58,7 @@ the CSV file will be processed by the Kafka container using the kafka Connect se
 <h2 id="2-server-architecture-with-docker">2. Server Architecture with Docker</h2>
 <p>As I mentioned before, we have deployed a Docker container running an SFTP server on Linux, and we´ve mapped a volume between host system (Ubuntu Server) and the Linux container. This means the host—Operating System— and the container share the same folder, ensuring data persistence.</p>
 <p class="article_images">
-    <img src="/project-documentation/DATA_STREET/DATA_STREET.svg" alt="Descripción de mi foto">
+    <img src="/project-documentation/DATA_STREET/server_sftp-docker.svg" alt="Descripción de mi foto">
 </p>
 <p>In this case, the <strong>Folder - Operating System</strong> and <strong>Folder - SFTP server</strong> refer to the same location.</p>
 <p>Child folders like <code>yahoo_finance</code> and <code>others</code> indicate that you can create any folders needed to store CSV files, as long as they are always subfolders of the <strong>Folder - SFTP server</strong>.</p>
