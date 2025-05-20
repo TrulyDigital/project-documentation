@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en" data-astro-cid-rftgkmjt> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><meta name="generator" content="Astro v5.7.13"><link rel="icon" type="image/svg+xml" href="/project-documentation/favicon.svg"><title>Project Documentation</title><link rel="stylesheet" href="/project-documentation/builds/general.gud2tCNU.css"></head> <body class="mainLayout__content" id="idBody" data-astro-cid-rftgkmjt> <!-- Mobile Menus --> <nav class="
+<!DOCTYPE html><html lang="en" data-astro-cid-rftgkmjt> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><meta name="generator" content="Astro v5.7.13"><link rel="icon" type="image/svg+xml" href="/project-documentation/favicon.svg"><title>Project Documentation</title><link rel="stylesheet" href="/project-documentation/builds/general.CJHH3FXS.css"></head> <body class="mainLayout__content" id="idBody" data-astro-cid-rftgkmjt> <!-- Mobile Menus --> <nav class="
                 mobileSideBarSubMenuLayout__content
                 mobileSideBarSubMenuLayout__content-close
             " id="idMobileSideBarSubMenu" data-astro-cid-rftgkmjt> <div class="sideBarSubMenu__content"> <div class="sideBarSubMenu__close"> <button id="idCloseButtonSideBarSubMenu"> <div class="inline-block"> <img src="/project-documentation/assets/close-square.svg" alt="Close Side Bar Menu" class="closeSquare"> </div> </button> </div> <ul class="sideBarSubMenu__items"> <li> <a href="/project-documentation/">
@@ -95,11 +95,17 @@ the CSV file will be processed by the Kafka container using the kafka Connect se
 <span class="line"><span style="color:#85E89D">        container_name</span><span style="color:#E1E4E8">: </span></span>
 <span class="line"><span style="color:#9ECBFF">            server-sftp</span></span>
 <span class="line"><span style="color:#85E89D">        ports</span><span style="color:#E1E4E8">:</span></span>
-<span class="line"><span style="color:#E1E4E8">            - </span><span style="color:#9ECBFF">"${ENV_LOCAL_SFTP_PORT}:22"</span></span>
-<span class="line"><span style="color:#85E89D">        command</span><span style="color:#E1E4E8">: </span></span>
-<span class="line"><span style="color:#9ECBFF">            ${ENV_LOCAL_SFTP_USER}:${ENV_LOCAL_SFTP_PASSWORD}:::../${ENV_LOCAL_SFTP_USER}</span></span>
+<span class="line"><span style="color:#E1E4E8">            - </span><span style="color:#F97583">|-</span></span>
+<span class="line"><span style="color:#9ECBFF">              "${ENV_LOCAL_SFTP_PORT}:\</span></span>
+<span class="line"><span style="color:#9ECBFF">              22"</span></span>
+<span class="line"><span style="color:#85E89D">        command</span><span style="color:#E1E4E8">: </span><span style="color:#F97583">|-</span></span>
+<span class="line"><span style="color:#9ECBFF">            ${ENV_LOCAL_SFTP_USER}:\</span></span>
+<span class="line"><span style="color:#9ECBFF">            ${ENV_LOCAL_SFTP_PASSWORD}:::\</span></span>
+<span class="line"><span style="color:#9ECBFF">            ../${ENV_LOCAL_SFTP_USER}</span></span>
 <span class="line"><span style="color:#85E89D">        volumes</span><span style="color:#E1E4E8">:</span></span>
-<span class="line"><span style="color:#E1E4E8">            - </span><span style="color:#9ECBFF">../server_sftp:${ENV_LOCAL_SFTP_CONTAINER_PATH_FOLDER}</span></span>
+<span class="line"><span style="color:#E1E4E8">            - </span><span style="color:#F97583">|-</span></span>
+<span class="line"><span style="color:#9ECBFF">              ../server_sftp:\</span></span>
+<span class="line"><span style="color:#9ECBFF">              ${ENV_LOCAL_SFTP_CONTAINER_PATH_FOLDER}</span></span>
 <span class="line"><span style="color:#85E89D">        networks</span><span style="color:#E1E4E8">:</span></span>
 <span class="line"><span style="color:#E1E4E8">            - </span><span style="color:#9ECBFF">net-local-data-street</span></span>
 <span class="line"></span>
@@ -107,6 +113,6 @@ the CSV file will be processed by the Kafka container using the kafka Connect se
 <span class="line"><span style="color:#85E89D">    net-local-data-street</span><span style="color:#E1E4E8">:</span></span>
 <span class="line"><span style="color:#85E89D">        name</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">net-local-data-street</span></span>
 <span class="line"><span style="color:#85E89D">        external</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">true</span></span></code></pre>
-<p>text text text</p> </section> </article> <aside class="asideLayout__content" data-astro-cid-rftgkmjt> <section></section> </aside> </section> <footer class="footerLayout__content" data-astro-cid-rftgkmjt> <section>
+<p>text text text</p> </section> </article> <aside class="asideLayout__content" data-astro-cid-rftgkmjt> <section class=" flex flex-col xl:w-44 pl-2 xl:pr-7"> <div class="flex w-full h-52 rounded-md bg-neutral-600"></div> </section> </aside> </section> <footer class="footerLayout__content" data-astro-cid-rftgkmjt> <section>
 Footer TrulyDigital
 </section> </footer>  <script type="module" src="/project-documentation/builds/LandingPageLayout.astro_astro_type_script_index_0_lang.D_0Ep9s0.js"></script></body></html>
