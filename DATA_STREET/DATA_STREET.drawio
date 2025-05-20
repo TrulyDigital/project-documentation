@@ -1,10 +1,10 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.5 Chrome/134.0.6998.205 Electron/35.3.0 Safari/537.36" version="27.0.5" pages="3">
   <diagram name="server_sftp-introduction" id="ZuUjq1oBNj3Yt_BZWQuD">
-    <mxGraphModel dx="872" dy="545" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="350" pageHeight="420" math="0" shadow="0">
+    <mxGraphModel dx="498" dy="311" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="350" pageHeight="420" math="0" shadow="0">
       <root>
         <mxCell id="0" />
-        <mxCell id="1" value="Diagrama" style="locked=1;" parent="0" />
-        <mxCell id="nhUN8rxTikC8suUAEnMW-1" value="&lt;span style=&quot;background-color: rgb(23, 23, 23);&quot;&gt;&amp;nbsp;«Ubuntu»&lt;br&gt;&lt;b&gt;&amp;nbsp;Server&lt;/b&gt;&lt;/span&gt;" style="html=1;dropTarget=0;whiteSpace=wrap;align=left;verticalAlign=top;fillColor=none;fontFamily=Helvetica;strokeColor=#F0B100;fontSize=16;strokeWidth=2;fontColor=#FFFFFF;" parent="1" vertex="1">
+        <mxCell id="1" value="Diagrama" style="" parent="0" />
+        <mxCell id="nhUN8rxTikC8suUAEnMW-1" value="&lt;span style=&quot;&quot;&gt;&amp;nbsp;«Ubuntu»&lt;br&gt;&lt;b&gt;&amp;nbsp;Server&lt;/b&gt;&lt;/span&gt;" style="html=1;dropTarget=0;whiteSpace=wrap;align=left;verticalAlign=top;fillColor=none;fontFamily=Helvetica;strokeColor=#F0B100;fontSize=16;strokeWidth=2;fontColor=#FFFFFF;labelBackgroundColor=#171717;" parent="1" vertex="1">
           <mxGeometry x="10" y="180" width="330" height="230" as="geometry" />
         </mxCell>
         <mxCell id="nhUN8rxTikC8suUAEnMW-2" value="" style="shape=module;jettyWidth=8;jettyHeight=4;fontFamily=Inter;fontSize=16;" parent="nhUN8rxTikC8suUAEnMW-1" vertex="1">
@@ -12,7 +12,7 @@
             <mxPoint x="-27" y="7" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nhUN8rxTikC8suUAEnMW-3" value="&lt;font style=&quot;background-color: rgb(23, 23, 23);&quot;&gt;&amp;nbsp;«Container»&lt;br&gt;&lt;b&gt;&amp;nbsp;Docker&lt;/b&gt;&lt;/font&gt;" style="html=1;dropTarget=0;whiteSpace=wrap;align=left;verticalAlign=top;fillColor=none;fontFamily=Helvetica;strokeColor=#2B7FFF;fontSize=16;strokeWidth=2;fontColor=#FFFFFF;" parent="1" vertex="1">
+        <mxCell id="nhUN8rxTikC8suUAEnMW-3" value="&lt;font style=&quot;&quot;&gt;&amp;nbsp;«Container»&lt;br&gt;&lt;b&gt;&amp;nbsp;Docker&lt;/b&gt;&lt;/font&gt;" style="html=1;dropTarget=0;whiteSpace=wrap;align=left;verticalAlign=top;fillColor=none;fontFamily=Helvetica;strokeColor=#2B7FFF;fontSize=16;strokeWidth=2;fontColor=#FFFFFF;labelBackgroundColor=#171717;" parent="1" vertex="1">
           <mxGeometry x="30" y="230" width="290" height="160" as="geometry" />
         </mxCell>
         <mxCell id="nhUN8rxTikC8suUAEnMW-4" value="" style="shape=module;jettyWidth=8;jettyHeight=4;fontFamily=Inter;fontSize=16;" parent="nhUN8rxTikC8suUAEnMW-3" vertex="1">
@@ -20,7 +20,7 @@
             <mxPoint x="-27" y="7" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nhUN8rxTikC8suUAEnMW-5" value="&lt;font style=&quot;background-color: rgb(23, 23, 23);&quot;&gt;«SFTP»&lt;br&gt;&lt;b&gt;Linux Server&lt;/b&gt;&lt;/font&gt;" style="html=1;dropTarget=0;whiteSpace=wrap;align=center;verticalAlign=middle;fillColor=none;fontFamily=Helvetica;strokeColor=#E12AFB;fontSize=16;strokeWidth=2;fontColor=#FFFFFF;" parent="1" vertex="1">
+        <mxCell id="nhUN8rxTikC8suUAEnMW-5" value="&lt;font style=&quot;&quot;&gt;«SFTP»&lt;br&gt;&lt;b&gt;Linux Server&lt;/b&gt;&lt;/font&gt;" style="html=1;dropTarget=0;whiteSpace=wrap;align=center;verticalAlign=middle;fillColor=none;fontFamily=Helvetica;strokeColor=#E12AFB;fontSize=16;strokeWidth=2;fontColor=#FFFFFF;labelBackgroundColor=#171717;" parent="1" vertex="1">
           <mxGeometry x="50" y="280" width="250" height="90" as="geometry" />
         </mxCell>
         <mxCell id="nhUN8rxTikC8suUAEnMW-6" value="" style="shape=module;jettyWidth=8;jettyHeight=4;fontFamily=Inter;fontSize=16;" parent="nhUN8rxTikC8suUAEnMW-5" vertex="1">
@@ -42,10 +42,10 @@
             <mxPoint x="1" y="-17" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nhUN8rxTikC8suUAEnMW-8" value="" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeWidth=2;strokeColor=#FFFFFF;fontSize=16;" parent="1" vertex="1">
+        <mxCell id="nhUN8rxTikC8suUAEnMW-8" value="" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeWidth=2;strokeColor=#FFFFFF;fontSize=16;labelBackgroundColor=default;fillColor=#FFFFFF;shadow=0;" parent="1" vertex="1">
           <mxGeometry x="150" y="10" width="50" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="nhUN8rxTikC8suUAEnMW-12" value="&lt;font style=&quot;color: rgb(255, 255, 255); background-color: rgb(23, 23, 23);&quot;&gt;Actor&lt;/font&gt;" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;fontFamily=Helvetica;fontSize=16;" parent="1" vertex="1">
+        <mxCell id="nhUN8rxTikC8suUAEnMW-12" value="&lt;font style=&quot;&quot;&gt;Actor&lt;/font&gt;" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;fontFamily=Helvetica;fontSize=16;fontColor=#FFFFFF;labelBackgroundColor=#171717;" parent="1" vertex="1">
           <mxGeometry x="165" y="45" width="80" height="26" as="geometry" />
         </mxCell>
       </root>
