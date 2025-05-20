@@ -17,7 +17,7 @@ pubDate: May 16th, 2025
     />
 </p>
 
-[👉 Data Street](/project-documentation/DATA_STREET) &nbsp;&nbsp;&nbsp;&nbsp; [👉 SFTP Server](/project-documentation/DATA_STREET/server-sftp)
+[👉 Return - Data Street Project](/project-documentation/DATA_STREET)
 
 # SFTP Server
 
@@ -37,7 +37,7 @@ For now, we're only interested in the SFTP server and the following image shows 
 
 <p class="article_images">
     <img
-        src="/project-documentation/DATA_STREET/server_sftp-introduction.webp"
+        src="/project-documentation/DATA_STREET/server_sftp-introduction.svg"
         alt="Descripción de mi foto"
     />
 </p>
@@ -56,7 +56,7 @@ As I mentioned before, we have deployed a Docker container running an SFTP serve
 
 <p class="article_images">
     <img
-        src="/project-documentation/DATA_STREET/server_sftp-docker.webp"
+        src="/project-documentation/DATA_STREET/server_sftp-docker.svg"
         alt="Descripción de mi foto"
     />
 </p>
@@ -104,13 +104,11 @@ The following is the Docker Compose file for the `local` environment. It is simi
 services:
     # sftp server
     server-sftp:
-        image: 
-            atmoz/sftp:latest
-        container_name: 
-            server-sftp
+        image: atmoz/sftp:latest
+        container_name: server-sftp
         ports:
             - "${ENV_LOCAL_SFTP_PORT}:22"
-        command: 
+        command:
             ${ENV_LOCAL_SFTP_USER}:${ENV_LOCAL_SFTP_PASSWORD}:::../${ENV_LOCAL_SFTP_USER}
         volumes:
             - ../server_sftp:${ENV_LOCAL_SFTP_CONTAINER_PATH_FOLDER}
@@ -121,6 +119,7 @@ networks:
     net-local-data-street:
         name: net-local-data-street
         external: true
+
 ```
 
 text text text

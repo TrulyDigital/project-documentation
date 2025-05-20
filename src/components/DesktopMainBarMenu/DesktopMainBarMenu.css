@@ -78,7 +78,7 @@
 
 .desktopMainBarMenu__projects{
     @apply
-    ml-7
+    ml-3
     hidden
     md:flex
 }

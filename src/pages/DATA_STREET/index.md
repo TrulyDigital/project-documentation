@@ -25,5 +25,5 @@ The software architecture project has different blocks of components, and each o
 
 Each component within the project's software architecture has its own dedicated documentation and each one is:
 
-[1️⃣ Project Software Architecture](/project-documentation/DATA_STREET/general)
-[2️⃣ SFTP Server Component](/project-documentation/DATA_STREET/server-sftp)
+[1. Project Software Architecture](/project-documentation/DATA_STREET/general)
+[2. SFTP Server Component](/project-documentation/DATA_STREET/server-sftp)
