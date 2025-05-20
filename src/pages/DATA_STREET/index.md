@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/Layout.astro
+layout: ../../layouts/LandingPageLayout/LandingPageLayout.astro
 title: "DATA STREET project documentation"
 pubDate: May 16th, 2025
 ---

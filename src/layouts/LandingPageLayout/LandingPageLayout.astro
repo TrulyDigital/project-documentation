@@ -1,0 +1,97 @@
+---
+import SideBarSubMenu from "@components/SideBarSubMenu/SideBarSubMenu.astro";
+import DesktopMainBarMenu from "@components/DesktopMainBarMenu/DesktopMainBarMenu.astro";
+import MobileSideBarMenu from "@components/MobileSideBarMenu/MobileSideBarMenu.astro";
+import Aside from "@components/Aside/Aside.astro";
+import Footer from "@components/Footer/Footer.astro";
+import '/src/styles/global.css';
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta 
+            name="viewport" 
+            content="width=device-width" 
+        />
+        <meta 
+            name="generator" 
+            content={Astro.generator} 
+        />
+        <link 
+            rel="icon" 
+            type="image/svg+xml" 
+            href="/project-documentation/favicon.svg" 
+        />
+        <title>Project Documentation</title>
+    </head>
+    <body 
+        class="mainLayout__content"
+        id="idBody"
+    >
+
+        <!-- Mobile Menus -->
+
+        <nav 
+            class="
+                mobileSideBarSubMenuLayout__content
+                mobileSideBarSubMenuLayout__content-close
+            "
+            id="idMobileSideBarSubMenu"
+        >
+            <SideBarSubMenu />
+        </nav>
+
+        <nav 
+            class="
+                mobileSideBarMenuLayout__content
+                mobileSideBarMenuLayout__content-close
+            "
+            id="idMobileSideBarMenu"
+        >
+            <MobileSideBarMenu />
+        </nav>
+
+        <!-- Main Layout -->
+
+        <nav class="desktopMainBarMenuLayout__content">
+            <DesktopMainBarMenu />
+        </nav>
+
+        <section class="desktopMainSectionLayout__content">
+            <nav class="desktopSideBarSubMenuLayout_content">
+                <SideBarSubMenu />
+            </nav>
+
+            <article class="articleLayout__content">
+                <section class="article__content">
+                    <slot />
+                </section>
+            </article>
+
+            <aside class="asideLayout__content">
+                <Aside />
+            </aside>
+        </section>
+
+        <footer class="footerLayout__content">
+            <Footer />
+        </footer>
+        
+    </body>
+</html>
+
+<style>
+    html,
+    body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+</style>
+
+<script>
+    import { application } from "@scripts/main";
+    application();
+</script>

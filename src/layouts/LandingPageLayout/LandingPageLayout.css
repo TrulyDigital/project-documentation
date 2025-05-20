@@ -1,13 +1,15 @@
 /*
  *
- * Main template styles
- * Grid
+ * LANDING PAGE LAYOUT
+ *
+ * @description
+ * all styles for layout template
+ *
  *
  */
+
 .mainLayout__content{
     @apply
-    grid
-    custom-grid-layout
     bg-neutral-900
 }
 
@@ -16,16 +18,37 @@
     inset-0
 }
 
-.desktopMainBarMenuLayout__content{
+.mobileSideBarSubMenuLayout__content{
     @apply
-    custom-grid-header
-    h-fit
+    h-full
+    fixed
+    z-10
+    top-0
+    left-0
+    bg-neutral-800
+    overflow-x-hidden
+    pt-2
+    pb-2
+    transition-all
+    duration-300
+    ease-in-out
+    flex
+    flex-col
+    text-neutral-200
 }
 
-.desktopSideBarMenuLayout__content{
+.mobileSideBarSubMenuLayout__content-open{
     @apply
-    custom-grid-sidebar
-    bg-blue-200
+    w-72
+    pl-2
+    pr-2
+}
+
+.mobileSideBarSubMenuLayout__content-close{
+    @apply
+    w-0
+    pl-0
+    pr-0
 }
 
 .mobileSideBarMenuLayout__content{
@@ -61,59 +84,79 @@
     pr-0
 }
 
-.articleLayout__content{
+.desktopMainBarMenuLayout__content{
     @apply
-    /* sm */
-    custom-grid-main
     w-full
+    pt-5
+    pb-5
+}
+
+.desktopMainSectionLayout__content{
+    @apply
     flex
     flex-row
-    justify-center
-    bg-violet-300
+    w-full
+}
+
+.desktopSideBarSubMenuLayout_content{
+    @apply
+    hidden
+    lg:flex
+    lg:flex-col
+    lg:w-56
 }
 
 .asideLayout__content{
     @apply
-    custom-grid-aside
+    hidden
+    xl:flex
+    xl:flex-row
+    xl:w-56
     bg-green-200
 }
 
 .footerLayout__content{
     @apply
-    custom-grid-footer
     bg-red-200
 }
 
 /*
  *
- * Article content styles
+ * ARTICLE CONTENT LAYOUT
+ *
+ * @description
+ * all styles for article in markdown
+ *
  *
  */
- 
-.article__content{
+
+.articleLayout__content{
     @apply
-    /* sm */
+    flex
+    flex-row
     w-full
-    pl-1
-    pr-4
-    max-w-screen-md
-    mx-auto
-    /* lg */
-    lg:pl-0
-    lg:pr-0
-    lg:w-9/12
+    justify-center
+    text-white
 }
 
-/*
- *
- * Heading styles
- *
- */
+/* Article content styles */
+
+.article__content{
+    @apply
+    w-full
+    pr-4
+    pl-4
+    lg:pl-7
+    lg:pr-7
+}
+
+/* Heading styles */
+
 .article__content h1,
 .article__content h2,
 .article__content h3 {
     @apply
-    text-zinc-700
+    text-zinc-100
 }
 
 .article__content h1{
@@ -142,11 +185,7 @@
     font-medium
 }
 
-/*
- *
- * Hero image styles
- *
- */
+/* Hero image styles */
 .article__content p:has(> img):has(+ h1){
     @apply
     /* sm */
@@ -154,11 +193,7 @@
     pb-8
 }
 
-/*
- *
- * Article content and text
- *
- */
+/* Article content and text */
 .article__content p:not(:has(img)),
 .article__content p:has(> strong),
 .article__content p:has(> code) {
@@ -166,11 +201,7 @@
     mt-5
 }
 
-/*
- *
- * Article links - menu
- *
- */
+/* Article links - menu */
 .article__content p:has(> a):not(:has(+ h1)){
     @apply
     mt-5
@@ -186,11 +217,8 @@
     underline-offset-4
 }
 
-/*
- *
- * Article links - breadcrumbs
- *
- */
+/* Article links - breadcrumbs */
+
 .article__content p:has(> a):has(+ h1){
     @apply
     mb-7
@@ -206,15 +234,11 @@
     underline-offset-4
 }
 
-/*
- *
- * Article images
- *
- */
+/* Article images */
+
 .article__content p:has(img):has(+ h2),
 .article__content p:has(img):has(+ h3){
     @apply
-    /* sm */
     flex
     flex-row
     justify-center
@@ -223,7 +247,6 @@
 
 .article_images {
     @apply
-    /* sm */
     mt-10
     mb-10
     flex
@@ -231,11 +254,8 @@
     justify-center
 }
 
-/*
- *
- * Article code element
- *
- */
+/* Article code element */
+
 .article__content p:has(> code) > code {
     @apply
     bg-slate-200
@@ -243,24 +263,16 @@
     rounded-sm
 }
 
-/*
- *
- * Article code element
- *
- */
+/* Article code element */
 .article__content strong{
     @apply
     text-pink-600
 }
 
-/*
- *
- * Article pre element
- *
- */
+/* Article pre element */
+
 .article__content pre{
     @apply
-    /* sm */
     block
     whitespace-pre
     mt-5
@@ -269,6 +281,5 @@
     text-xs
     w-full
     overflow-x-auto
-    /* md */
     md:text-base
 }

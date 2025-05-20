@@ -1,6 +1,8 @@
 ---
-import BurguerSvg from "@components/BurguerSvg.astro";
-import ArrowRightSvg from "@components/ArrowRightSvg.astro";
+import BurguerSvg from "@components/Svg/BurguerSvg.astro";
+import ArrowRightSvg from "@components/Svg/ArrowRightSvg.astro";
+import LinkedinSvg from "@components/Svg/LinkedinSvg.astro";
+import GithubSvg from "@components/Svg/GithubSvg.astro";
 ---
 
 <section class="desktopMainBarMenu__content">
@@ -19,7 +21,7 @@ import ArrowRightSvg from "@components/ArrowRightSvg.astro";
         </div>
         <div class="desktopMainBarMenu__projects">
             <a href="/project-documentation/">
-                All Projects
+                Home
             </a>
         </div>
         <ul class="desktopMainBarMenu__items">
@@ -36,7 +38,32 @@ import ArrowRightSvg from "@components/ArrowRightSvg.astro";
         </ul>
     </div>
     <div class="desktopMainBarMenu__socialAndMobileSideBarMenu">
-        <button id="idBurguerButtonMainBarMenu">
+        <li>
+            <a 
+                href="https://www.linkedin.com/in/alex-daniel-meza-lopez/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Abrir en una nueva pestaña (enlace externo)"
+                title="Linkedin"
+            >
+                <LinkedinSvg />
+            </a>
+        </li>
+        <li>
+            <a 
+                href="https://github.com/TrulyDigital"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Abrir en una nueva pestaña (enlace externo)"
+                title="Github"
+            >
+                <GithubSvg />
+            </a>
+        </li>
+        <button 
+            class="burguerButtonMainBarMenu"
+            id="idBurguerButtonMainBarMenu"
+        >
             <BurguerSvg />
         </button>
     </div>

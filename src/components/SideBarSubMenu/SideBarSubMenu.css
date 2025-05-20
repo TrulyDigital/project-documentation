@@ -1,0 +1,57 @@
+.sideBarSubMenu__content {
+    @apply
+    lg:w-44
+    flex
+    flex-col
+    pl-2
+    pr-2
+}
+
+.sideBarSubMenu__close{
+    @apply
+    flex
+    flex-row
+    items-center
+    pt-2
+    md:hidden
+    mb-12
+}
+
+.sideBarSubMenu__close > button{
+    @apply
+    flex
+    flex-row
+    items-center
+    justify-center
+    w-6
+    h-6
+}
+
+.sideBarSubMenu__items{
+    @apply
+    flex
+    flex-col
+    gap-4
+    w-full
+    text-white
+}
+
+.sideBarSubMenu__items > li{
+    @apply
+    flex
+    w-full
+}
+
+.sideBarSubMenu__items > li > a{
+    @apply
+    w-full
+    bg-neutral-700
+    pt-1
+    pb-1
+    pl-2
+    rounded-md
+    hover:text-violet-400
+    transition-all
+    duration-200
+    ease-in-out
+}
