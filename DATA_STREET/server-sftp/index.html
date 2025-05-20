@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en" data-astro-cid-rftgkmjt> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><meta name="generator" content="Astro v5.7.13"><link rel="icon" type="image/svg+xml" href="/project-documentation/favicon.svg"><title>Project Documentation</title><link rel="stylesheet" href="/project-documentation/builds/general.q85LIRrh.css"></head> <body class="mainLayout__content" id="idBody" data-astro-cid-rftgkmjt> <!-- Mobile Menus --> <nav class="
+<!DOCTYPE html><html lang="en" data-astro-cid-rftgkmjt> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><meta name="generator" content="Astro v5.7.13"><link rel="icon" type="image/svg+xml" href="/project-documentation/favicon.svg"><title>Project Documentation</title><link rel="stylesheet" href="/project-documentation/builds/general.BgKSXoyf.css"></head> <body class="mainLayout__content" id="idBody" data-astro-cid-rftgkmjt> <!-- Mobile Menus --> <nav class="
                 mobileSideBarSubMenuLayout__content
                 mobileSideBarSubMenuLayout__content-close
             " id="idMobileSideBarSubMenu" data-astro-cid-rftgkmjt> <div class="sideBarSubMenu__content"> <div class="sideBarSubMenu__close"> <button id="idCloseButtonSideBarSubMenu"> <div class="inline-block"> <img src="/project-documentation/assets/close-square.svg" alt="Close Side Bar Menu" class="closeSquare"> </div> </button> </div> <ul class="sideBarSubMenu__items"> <li> <a href="/project-documentation/">
@@ -58,7 +58,7 @@ the CSV file will be processed by the Kafka container using the kafka Connect se
 <h2 id="2-server-architecture-with-docker">2. Server Architecture with Docker</h2>
 <p>As I mentioned before, we have deployed a Docker container running an SFTP server on Linux, and we´ve mapped a volume between host system (Ubuntu Server) and the Linux container. This means the host—Operating System— and the container share the same folder, ensuring data persistence.</p>
 <p class="article_images">
-    <img src="/project-documentation/DATA_STREET/server_sftp-docker.webp" alt="Descripción de mi foto">
+    <img src="/project-documentation/DATA_STREET/server_sftp-docker.png" alt="Descripción de mi foto">
 </p>
 <p>In this case, the <strong>Folder - Operating System</strong> and <strong>Folder - SFTP server</strong> refer to the same location.</p>
 <p>Child folders like <code>yahoo_finance</code> and <code>others</code> indicate that you can create any folders needed to store CSV files, as long as they are always subfolders of the <strong>Folder - SFTP server</strong>.</p>
@@ -107,8 +107,6 @@ the CSV file will be processed by the Kafka container using the kafka Connect se
 <span class="line"><span style="color:#85E89D">    net-local-data-street</span><span style="color:#E1E4E8">:</span></span>
 <span class="line"><span style="color:#85E89D">        name</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">net-local-data-street</span></span>
 <span class="line"><span style="color:#85E89D">        external</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">true</span></span></code></pre>
-<p>text text text</p> </section> </article> <aside class="asideLayout__content" data-astro-cid-rftgkmjt> <section>
-Aside
-</section> </aside> </section> <footer class="footerLayout__content" data-astro-cid-rftgkmjt> <section>
+<p>text text text</p> </section> </article> <aside class="asideLayout__content" data-astro-cid-rftgkmjt> <section></section> </aside> </section> <footer class="footerLayout__content" data-astro-cid-rftgkmjt> <section>
 Footer TrulyDigital
 </section> </footer>  <script type="module" src="/project-documentation/builds/LandingPageLayout.astro_astro_type_script_index_0_lang.D_0Ep9s0.js"></script></body></html>
